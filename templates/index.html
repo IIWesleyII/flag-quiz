@@ -1,7 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
     <h1>Flag Quiz</h1>
+    
     <div class = "flag">
         <img class = "center" src ="{{flag_url}}">
     </div>
+
+    <form method="POST" action="/">
+        {% for country in country_list%}
+            <input type="submit" value="{{country}}" name="{{country}}"/>
+        {%endfor%}
+        <input type="submit" value="RESET" name="RESET"/>
+    </form>
+
+    <p style="color:rgb(40, 163, 40);">Correct: {{correct}}</p>
+    <p style="color:rgb(255, 79, 79);">Incorrect: {{incorrect}}</p>
 {% endblock %}
