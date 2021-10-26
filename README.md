@@ -2,4 +2,4 @@
 
 ### Quiz your knowledge of flags!
 
-!(Flag api)[https://flagpedia.net/download/api]
+[Flag api](https://flagpedia.net/download/api)
