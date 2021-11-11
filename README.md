@@ -7,5 +7,5 @@
 ## Dependencies
 
 ```
-py install -r requirements
+pip install -r requirements
 ```
